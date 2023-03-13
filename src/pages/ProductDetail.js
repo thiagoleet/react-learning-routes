@@ -6,18 +6,18 @@ const ProductDetailPage = () => {
   const navigate = useNavigate();
 
   function navigateHandler() {
-    navigate("/products");
-
-    return (
-      <>
-        <h1>Product Details!</h1>
-        <p>{params.productId}</p>
-        <p>
-          <button onClick={navigateHandler}>Back to products</button>
-        </p>
-      </>
-    );
+    navigate("products");
   }
+
+  return (
+    <>
+      <h1>Product Details!</h1>
+      <p>{params.productId}</p>
+      <p>
+        <button onClick={navigateHandler}>Back to products</button>
+      </p>
+    </>
+  );
 };
 
 export default ProductDetailPage;
