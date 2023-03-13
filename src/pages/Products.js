@@ -4,7 +4,7 @@ import { products } from "../data/products";
 const ProductsPage = () => {
   const productList = products.map((product) => {
     return <li key={product.id}>
-      <Link to={`/products/${product.id}`}>{product.title}</Link></li>;
+      <Link to={`${product.id}`}>{product.title}</Link></li>;
   });
 
   return (
